@@ -1,0 +1,362 @@
+[
+  {
+    "model": "reference_markings_baseline",
+    "fov": "original",
+    "group": "all",
+    "count": 600,
+    "mean_m": 0.3483322858810425,
+    "end_m": 0.6491958498954773,
+    "p95_scene_m": 0.6872819513082501
+  },
+  {
+    "model": "reference_markings_baseline",
+    "fov": "original",
+    "group": "straight",
+    "count": 204,
+    "mean_m": 0.2312936931848526,
+    "end_m": 0.5218434929847717,
+    "p95_scene_m": 0.44486875087022776
+  },
+  {
+    "model": "reference_markings_baseline",
+    "fov": "original",
+    "group": "left",
+    "count": 208,
+    "mean_m": 0.40891414880752563,
+    "end_m": 0.692072331905365,
+    "p95_scene_m": 0.7337452799081797
+  },
+  {
+    "model": "reference_markings_baseline",
+    "fov": "original",
+    "group": "right",
+    "count": 188,
+    "mean_m": 0.4083048403263092,
+    "end_m": 0.7399489879608154,
+    "p95_scene_m": 0.7079320192337036
+  },
+  {
+    "model": "reference_markings_baseline",
+    "fov": "original",
+    "group": "turns",
+    "count": 396,
+    "mean_m": 0.40862491726875305,
+    "end_m": 0.7148016691207886,
+    "p95_scene_m": 0.7249801307916641
+  },
+  {
+    "model": "reference_markings_baseline",
+    "fov": "20m",
+    "group": "all",
+    "count": 600,
+    "mean_m": 0.9229361414909363,
+    "end_m": 1.473232626914978,
+    "p95_scene_m": 2.0943623781204215
+  },
+  {
+    "model": "reference_markings_baseline",
+    "fov": "20m",
+    "group": "straight",
+    "count": 204,
+    "mean_m": 0.5163947343826294,
+    "end_m": 0.6804491877555847,
+    "p95_scene_m": 1.0740433752536773
+  },
+  {
+    "model": "reference_markings_baseline",
+    "fov": "20m",
+    "group": "left",
+    "count": 208,
+    "mean_m": 1.123984694480896,
+    "end_m": 1.8871610164642334,
+    "p95_scene_m": 2.276330637931823
+  },
+  {
+    "model": "reference_markings_baseline",
+    "fov": "20m",
+    "group": "right",
+    "count": 188,
+    "mean_m": 1.141640067100525,
+    "end_m": 1.8755236864089966,
+    "p95_scene_m": 2.2915271878242494
+  },
+  {
+    "model": "reference_markings_baseline",
+    "fov": "20m",
+    "group": "turns",
+    "count": 396,
+    "mean_m": 1.1323665380477905,
+    "end_m": 1.881636142730713,
+    "p95_scene_m": 2.2894214391708374
+  },
+  {
+    "model": "full_baseline",
+    "fov": "original",
+    "group": "all",
+    "count": 600,
+    "mean_m": 0.3553580641746521,
+    "end_m": 0.6276844143867493,
+    "p95_scene_m": 0.7234693169593807
+  },
+  {
+    "model": "full_baseline",
+    "fov": "original",
+    "group": "straight",
+    "count": 204,
+    "mean_m": 0.2218673825263977,
+    "end_m": 0.4513823688030243,
+    "p95_scene_m": 0.46478933542966827
+  },
+  {
+    "model": "full_baseline",
+    "fov": "original",
+    "group": "left",
+    "count": 208,
+    "mean_m": 0.42355045676231384,
+    "end_m": 0.6992040276527405,
+    "p95_scene_m": 0.7575685590505599
+  },
+  {
+    "model": "full_baseline",
+    "fov": "original",
+    "group": "right",
+    "count": 188,
+    "mean_m": 0.4247627556324005,
+    "end_m": 0.7398629784584045,
+    "p95_scene_m": 0.7992913484573364
+  },
+  {
+    "model": "full_baseline",
+    "fov": "original",
+    "group": "turns",
+    "count": 396,
+    "mean_m": 0.424125999212265,
+    "end_m": 0.7185068130493164,
+    "p95_scene_m": 0.7955430895090103
+  },
+  {
+    "model": "full_baseline",
+    "fov": "20m",
+    "group": "all",
+    "count": 600,
+    "mean_m": 0.9737792611122131,
+    "end_m": 1.6248445510864258,
+    "p95_scene_m": 2.1085446119308466
+  },
+  {
+    "model": "full_baseline",
+    "fov": "20m",
+    "group": "straight",
+    "count": 204,
+    "mean_m": 0.5289703607559204,
+    "end_m": 0.7484700679779053,
+    "p95_scene_m": 1.0725890398025513
+  },
+  {
+    "model": "full_baseline",
+    "fov": "20m",
+    "group": "left",
+    "count": 208,
+    "mean_m": 1.3580414056777954,
+    "end_m": 2.348313808441162,
+    "p95_scene_m": 2.3385221838951105
+  },
+  {
+    "model": "full_baseline",
+    "fov": "20m",
+    "group": "right",
+    "count": 188,
+    "mean_m": 1.03130304813385,
+    "end_m": 1.7753701210021973,
+    "p95_scene_m": 1.9565242886543275
+  },
+  {
+    "model": "full_baseline",
+    "fov": "20m",
+    "group": "turns",
+    "count": 396,
+    "mean_m": 1.2029231786727905,
+    "end_m": 2.076310396194458,
+    "p95_scene_m": 2.2269721627235413
+  },
+  {
+    "model": "reference_markings_range_aug",
+    "fov": "original",
+    "group": "all",
+    "count": 600,
+    "mean_m": 0.6344416737556458,
+    "end_m": 1.1210455894470215,
+    "p95_scene_m": 1.5931604385375973
+  },
+  {
+    "model": "reference_markings_range_aug",
+    "fov": "original",
+    "group": "straight",
+    "count": 204,
+    "mean_m": 0.2017168551683426,
+    "end_m": 0.3990631103515625,
+    "p95_scene_m": 0.3736119270324707
+  },
+  {
+    "model": "reference_markings_range_aug",
+    "fov": "original",
+    "group": "left",
+    "count": 208,
+    "mean_m": 0.8797283172607422,
+    "end_m": 1.523254156112671,
+    "p95_scene_m": 1.928054881095885
+  },
+  {
+    "model": "reference_markings_range_aug",
+    "fov": "original",
+    "group": "right",
+    "count": 188,
+    "mean_m": 0.8326129913330078,
+    "end_m": 1.4594765901565552,
+    "p95_scene_m": 1.6176379144191741
+  },
+  {
+    "model": "reference_markings_range_aug",
+    "fov": "original",
+    "group": "turns",
+    "count": 396,
+    "mean_m": 0.8573604822158813,
+    "end_m": 1.4929760694503784,
+    "p95_scene_m": 1.7752167582511902
+  },
+  {
+    "model": "reference_markings_range_aug",
+    "fov": "20m",
+    "group": "all",
+    "count": 600,
+    "mean_m": 0.6406093835830688,
+    "end_m": 1.128906011581421,
+    "p95_scene_m": 1.614183986186981
+  },
+  {
+    "model": "reference_markings_range_aug",
+    "fov": "20m",
+    "group": "straight",
+    "count": 204,
+    "mean_m": 0.20133867859840393,
+    "end_m": 0.39514923095703125,
+    "p95_scene_m": 0.375898240506649
+  },
+  {
+    "model": "reference_markings_range_aug",
+    "fov": "20m",
+    "group": "left",
+    "count": 208,
+    "mean_m": 0.8989742994308472,
+    "end_m": 1.5577136278152466,
+    "p95_scene_m": 1.9257206261157975
+  },
+  {
+    "model": "reference_markings_range_aug",
+    "fov": "20m",
+    "group": "right",
+    "count": 188,
+    "mean_m": 0.8314143419265747,
+    "end_m": 1.4506850242614746,
+    "p95_scene_m": 1.5775603115558625
+  },
+  {
+    "model": "reference_markings_range_aug",
+    "fov": "20m",
+    "group": "turns",
+    "count": 396,
+    "mean_m": 0.8669003844261169,
+    "end_m": 1.5069018602371216,
+    "p95_scene_m": 1.8100761771202087
+  },
+  {
+    "model": "full_range_aug",
+    "fov": "original",
+    "group": "all",
+    "count": 600,
+    "mean_m": 0.6595261096954346,
+    "end_m": 1.1877416372299194,
+    "p95_scene_m": 1.5601666152477263
+  },
+  {
+    "model": "full_range_aug",
+    "fov": "original",
+    "group": "straight",
+    "count": 204,
+    "mean_m": 0.21476195752620697,
+    "end_m": 0.4860082268714905,
+    "p95_scene_m": 0.41034020185470577
+  },
+  {
+    "model": "full_range_aug",
+    "fov": "original",
+    "group": "left",
+    "count": 208,
+    "mean_m": 0.9065325856208801,
+    "end_m": 1.5705565214157104,
+    "p95_scene_m": 1.8298479974269868
+  },
+  {
+    "model": "full_range_aug",
+    "fov": "original",
+    "group": "right",
+    "count": 188,
+    "mean_m": 0.8688586950302124,
+    "end_m": 1.525657057762146,
+    "p95_scene_m": 1.7041080296039584
+  },
+  {
+    "model": "full_range_aug",
+    "fov": "original",
+    "group": "turns",
+    "count": 396,
+    "mean_m": 0.8886470198631287,
+    "end_m": 1.5492405891418457,
+    "p95_scene_m": 1.764811486005783
+  },
+  {
+    "model": "full_range_aug",
+    "fov": "20m",
+    "group": "all",
+    "count": 600,
+    "mean_m": 0.6772593259811401,
+    "end_m": 1.2145071029663086,
+    "p95_scene_m": 1.6158799827098844
+  },
+  {
+    "model": "full_range_aug",
+    "fov": "20m",
+    "group": "straight",
+    "count": 204,
+    "mean_m": 0.21587242186069489,
+    "end_m": 0.47705477476119995,
+    "p95_scene_m": 0.41481324583292
+  },
+  {
+    "model": "full_range_aug",
+    "fov": "20m",
+    "group": "left",
+    "count": 208,
+    "mean_m": 0.9481582045555115,
+    "end_m": 1.6412018537521362,
+    "p95_scene_m": 1.8477168083190914
+  },
+  {
+    "model": "full_range_aug",
+    "fov": "20m",
+    "group": "right",
+    "count": 188,
+    "mean_m": 0.8781955242156982,
+    "end_m": 1.5426334142684937,
+    "p95_scene_m": 1.6286247432231904
+  },
+  {
+    "model": "full_range_aug",
+    "fov": "20m",
+    "group": "turns",
+    "count": 396,
+    "mean_m": 0.9149435758590698,
+    "end_m": 1.5944067239761353,
+    "p95_scene_m": 1.7996481657028198
+  }
+]

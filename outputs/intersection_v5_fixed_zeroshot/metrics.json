@@ -1,0 +1,92 @@
+[
+  {
+    "id": "intersection_left_B2E_00",
+    "navigation": "left",
+    "entry_lane": "B",
+    "exit_lane": "E",
+    "path_mean_m": 1.9072949886322021,
+    "endpoint_m": 3.433344841003418,
+    "last_20m_mean_m": 3.627363920211792,
+    "exit_near_lane_center": false
+  },
+  {
+    "id": "intersection_right_B2E_00",
+    "navigation": "right",
+    "entry_lane": "B",
+    "exit_lane": "E",
+    "path_mean_m": 0.9476550221443176,
+    "endpoint_m": 1.788256049156189,
+    "last_20m_mean_m": 1.77792489528656,
+    "exit_near_lane_center": true
+  },
+  {
+    "id": "intersection_right_A2F_01",
+    "navigation": "right",
+    "entry_lane": "A",
+    "exit_lane": "F",
+    "path_mean_m": 1.2603436708450317,
+    "endpoint_m": 1.8618277311325073,
+    "last_20m_mean_m": 1.8196403980255127,
+    "exit_near_lane_center": false
+  },
+  {
+    "id": "intersection_left_A2F_01",
+    "navigation": "left",
+    "entry_lane": "A",
+    "exit_lane": "F",
+    "path_mean_m": 1.5972449779510498,
+    "endpoint_m": 2.9439945220947266,
+    "last_20m_mean_m": 3.008087635040283,
+    "exit_near_lane_center": false
+  },
+  {
+    "id": "intersection_right_C2D_02",
+    "navigation": "right",
+    "entry_lane": "C",
+    "exit_lane": "D",
+    "path_mean_m": 0.9356651902198792,
+    "endpoint_m": 1.783327341079712,
+    "last_20m_mean_m": 1.631822943687439,
+    "exit_near_lane_center": true
+  },
+  {
+    "id": "intersection_straight_C2D_02",
+    "navigation": "straight",
+    "entry_lane": "C",
+    "exit_lane": "D",
+    "path_mean_m": 0.2787855267524719,
+    "endpoint_m": 0.15240052342414856,
+    "last_20m_mean_m": 0.21489782631397247,
+    "exit_near_lane_center": true
+  },
+  {
+    "id": "intersection_left_C2D_02",
+    "navigation": "left",
+    "entry_lane": "C",
+    "exit_lane": "D",
+    "path_mean_m": 3.7318828105926514,
+    "endpoint_m": 6.887179374694824,
+    "last_20m_mean_m": 6.936415195465088,
+    "exit_near_lane_center": false
+  },
+  {
+    "id": "intersection_straight_B2E_00",
+    "navigation": "straight",
+    "entry_lane": "B",
+    "exit_lane": "E",
+    "path_mean_m": 0.8800626397132874,
+    "endpoint_m": 1.3238909244537354,
+    "last_20m_mean_m": 1.609635353088379,
+    "exit_near_lane_center": true
+  },
+  {
+    "id": "intersection_straight_A2F_01",
+    "navigation": "straight",
+    "entry_lane": "A",
+    "exit_lane": "F",
+    "path_mean_m": 0.5840939283370972,
+    "endpoint_m": 1.194683313369751,
+    "last_20m_mean_m": 0.910729706287384,
+    "exit_near_lane_center": true
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "mode": "reference_only",
+    "group": "all",
+    "count": 600,
+    "path_mean_m": 0.6542374491691589,
+    "path_end_m": 1.1639413833618164,
+    "path_p95_sample_mean_m": 1.6480252802371975
+  },
+  {
+    "mode": "reference_only",
+    "group": "straight",
+    "count": 204,
+    "path_mean_m": 0.21342973411083221,
+    "path_end_m": 0.4278329610824585,
+    "path_p95_sample_mean_m": 0.39108209908008573
+  },
+  {
+    "mode": "reference_only",
+    "group": "left",
+    "count": 208,
+    "path_mean_m": 0.9098561406135559,
+    "path_end_m": 1.5662105083465576,
+    "path_p95_sample_mean_m": 1.7927388370037078
+  },
+  {
+    "mode": "reference_only",
+    "group": "right",
+    "count": 188,
+    "path_mean_m": 0.849748432636261,
+    "path_end_m": 1.5176334381103516,
+    "path_p95_sample_mean_m": 1.6505062937736512
+  },
+  {
+    "mode": "reference_markings",
+    "group": "all",
+    "count": 600,
+    "path_mean_m": 0.34833213686943054,
+    "path_end_m": 0.6491957306861877,
+    "path_p95_sample_mean_m": 0.6872816681861874
+  },
+  {
+    "mode": "reference_markings",
+    "group": "straight",
+    "count": 204,
+    "path_mean_m": 0.23129361867904663,
+    "path_end_m": 0.5218431949615479,
+    "path_p95_sample_mean_m": 0.44486692845821374
+  },
+  {
+    "mode": "reference_markings",
+    "group": "left",
+    "count": 208,
+    "path_mean_m": 0.4089140295982361,
+    "path_end_m": 0.692072331905365,
+    "path_p95_sample_mean_m": 0.7337467133998866
+  },
+  {
+    "mode": "reference_markings",
+    "group": "right",
+    "count": 188,
+    "path_mean_m": 0.4083046019077301,
+    "path_end_m": 0.7399486899375916,
+    "path_p95_sample_mean_m": 0.7079319566488266
+  },
+  {
+    "mode": "full",
+    "group": "all",
+    "count": 600,
+    "path_mean_m": 0.3553580641746521,
+    "path_end_m": 0.6276844143867493,
+    "path_p95_sample_mean_m": 0.7234719097614284
+  },
+  {
+    "mode": "full",
+    "group": "straight",
+    "count": 204,
+    "path_mean_m": 0.2218676507472992,
+    "path_end_m": 0.4513821303844452,
+    "path_p95_sample_mean_m": 0.4647898584604262
+  },
+  {
+    "mode": "full",
+    "group": "left",
+    "count": 208,
+    "path_mean_m": 0.42355039715766907,
+    "path_end_m": 0.6992038488388062,
+    "path_p95_sample_mean_m": 0.7575684905052185
+  },
+  {
+    "mode": "full",
+    "group": "right",
+    "count": 188,
+    "path_mean_m": 0.4247627258300781,
+    "path_end_m": 0.7398632764816284,
+    "path_p95_sample_mean_m": 0.7992921620607376
+  }
+]

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Editor
+.vscode/
+.idea/
+
+# Conda / virtual environments
+.conda/
+.venv/
+venv/
+env/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key

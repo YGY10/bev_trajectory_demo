@@ -1,0 +1,168 @@
+{
+  "config": {
+    "forward_m": 20.0,
+    "clip_rule": "x <= forward_m; retain x < 0"
+  },
+  "rows": [
+    {
+      "variant": "reference_markings_original",
+      "group": "all",
+      "count": 600,
+      "path_mean_m": 0.34833231568336487,
+      "endpoint_m": 0.6491958498954773,
+      "p95_scene_mean_m": 0.6872819513082501
+    },
+    {
+      "variant": "reference_markings_original",
+      "group": "straight",
+      "count": 204,
+      "path_mean_m": 0.2312936931848526,
+      "endpoint_m": 0.5218434929847717,
+      "p95_scene_mean_m": 0.44486875087022776
+    },
+    {
+      "variant": "reference_markings_original",
+      "group": "left",
+      "count": 208,
+      "path_mean_m": 0.4089142084121704,
+      "endpoint_m": 0.692072331905365,
+      "p95_scene_mean_m": 0.7337452799081797
+    },
+    {
+      "variant": "reference_markings_original",
+      "group": "right",
+      "count": 188,
+      "path_mean_m": 0.4083048105239868,
+      "endpoint_m": 0.7399489879608154,
+      "p95_scene_mean_m": 0.7079320192337036
+    },
+    {
+      "variant": "reference_markings_original",
+      "group": "turns",
+      "count": 396,
+      "path_mean_m": 0.40862488746643066,
+      "endpoint_m": 0.7148016691207886,
+      "p95_scene_mean_m": 0.7249801307916641
+    },
+    {
+      "variant": "reference_markings_20m",
+      "group": "all",
+      "count": 600,
+      "path_mean_m": 0.9229360818862915,
+      "endpoint_m": 1.473232626914978,
+      "p95_scene_mean_m": 2.0943623781204215
+    },
+    {
+      "variant": "reference_markings_20m",
+      "group": "straight",
+      "count": 204,
+      "path_mean_m": 0.5163947343826294,
+      "endpoint_m": 0.6804491877555847,
+      "p95_scene_mean_m": 1.0740433752536773
+    },
+    {
+      "variant": "reference_markings_20m",
+      "group": "left",
+      "count": 208,
+      "path_mean_m": 1.1239848136901855,
+      "endpoint_m": 1.8871610164642334,
+      "p95_scene_mean_m": 2.276330637931823
+    },
+    {
+      "variant": "reference_markings_20m",
+      "group": "right",
+      "count": 188,
+      "path_mean_m": 1.1416398286819458,
+      "endpoint_m": 1.8755236864089966,
+      "p95_scene_mean_m": 2.2915271878242494
+    },
+    {
+      "variant": "reference_markings_20m",
+      "group": "turns",
+      "count": 396,
+      "path_mean_m": 1.13236665725708,
+      "endpoint_m": 1.881636142730713,
+      "p95_scene_mean_m": 2.2894214391708374
+    },
+    {
+      "variant": "full_original",
+      "group": "all",
+      "count": 600,
+      "path_mean_m": 0.3553580641746521,
+      "endpoint_m": 0.6276844143867493,
+      "p95_scene_mean_m": 0.7234693169593807
+    },
+    {
+      "variant": "full_original",
+      "group": "straight",
+      "count": 204,
+      "path_mean_m": 0.2218673974275589,
+      "endpoint_m": 0.4513823688030243,
+      "p95_scene_mean_m": 0.46478933542966827
+    },
+    {
+      "variant": "full_original",
+      "group": "left",
+      "count": 208,
+      "path_mean_m": 0.42355045676231384,
+      "endpoint_m": 0.6992040276527405,
+      "p95_scene_mean_m": 0.7575685590505599
+    },
+    {
+      "variant": "full_original",
+      "group": "right",
+      "count": 188,
+      "path_mean_m": 0.4247627258300781,
+      "endpoint_m": 0.7398629784584045,
+      "p95_scene_mean_m": 0.7992913484573364
+    },
+    {
+      "variant": "full_original",
+      "group": "turns",
+      "count": 396,
+      "path_mean_m": 0.4241259694099426,
+      "endpoint_m": 0.7185068130493164,
+      "p95_scene_mean_m": 0.7955430895090103
+    },
+    {
+      "variant": "full_20m",
+      "group": "all",
+      "count": 600,
+      "path_mean_m": 0.9737793207168579,
+      "endpoint_m": 1.6248445510864258,
+      "p95_scene_mean_m": 2.1085446119308466
+    },
+    {
+      "variant": "full_20m",
+      "group": "straight",
+      "count": 204,
+      "path_mean_m": 0.5289703607559204,
+      "endpoint_m": 0.7484700679779053,
+      "p95_scene_mean_m": 1.0725890398025513
+    },
+    {
+      "variant": "full_20m",
+      "group": "left",
+      "count": 208,
+      "path_mean_m": 1.358041524887085,
+      "endpoint_m": 2.348313808441162,
+      "p95_scene_mean_m": 2.3385221838951105
+    },
+    {
+      "variant": "full_20m",
+      "group": "right",
+      "count": 188,
+      "path_mean_m": 1.03130304813385,
+      "endpoint_m": 1.7753701210021973,
+      "p95_scene_mean_m": 1.9565242886543275
+    },
+    {
+      "variant": "full_20m",
+      "group": "turns",
+      "count": 396,
+      "path_mean_m": 1.20292329788208,
+      "endpoint_m": 2.076310396194458,
+      "p95_scene_mean_m": 2.2269721627235413
+    }
+  ]
+}
