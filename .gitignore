@@ -27,3 +27,21 @@ env/
 !.env.example
 *.pem
 *.key
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Editor local files
+.vscode/
+
+# Generated experiment outputs
+outputs/
+
+# Local environments
+.venv/
+venv/
+
+# Temporary files
+*.tmp
+*.swp

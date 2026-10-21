@@ -17,9 +17,20 @@ def main():
     p.add_argument('--device', default='cuda' if torch.cuda.is_available() else 'cpu')
     args = p.parse_args()
     ckpt = torch.load(args.checkpoint, map_location='cpu', weights_only=True)
-    if ckpt.get('model_type') != 'arc_length_path_v4':
-        raise ValueError('This checkpoint is not a V4 path model')
-    ds = BEVDataset(args.data, split='val', seed=ckpt['seed'])
+    if ckpt.get('model_type') not in (
+        'arc_length_path_v4',
+        'arc_length_path_v5',
+    ):
+        raise ValueError(
+            f"Unsupported checkpoint type: {ckpt.get('model_type')}"
+        )
+    ds = BEVDataset(
+        args.data,
+        split="all",
+        augment=False,
+        max_lines=32,
+        ref_points=ckpt["horizon"],
+    )
     sample = ds[args.index]
     model = TrajectoryModel(horizon=ckpt['horizon']).to(args.device)
     model.load_state_dict(ckpt['model'])
