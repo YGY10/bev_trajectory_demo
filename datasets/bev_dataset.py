@@ -27,9 +27,86 @@ def resample(points, n, *, step=None):
     return np.stack([np.interp(t, d, p[:, j]) for j in range(2)], -1).astype(np.float32)
 
 
+
+def augment_reference_geometry(reference, max_offset_m=1.5):
+    """Smooth lateral augmentation with both endpoints anchored."""
+    ref = np.asarray(reference, dtype=np.float64)
+    if len(ref) < 3:
+        return ref.astype(np.float32).copy()
+
+    segment = np.linalg.norm(np.diff(ref, axis=0), axis=1)
+    arc = np.r_[0.0, np.cumsum(segment)]
+    if arc[-1] < 1e-6:
+        return ref.astype(np.float32).copy()
+
+    u = arc / arc[-1]
+
+    tangent = np.gradient(ref, axis=0)
+    tangent /= np.maximum(
+        np.linalg.norm(tangent, axis=1, keepdims=True),
+        1e-8,
+    )
+    normal = np.stack([-tangent[:, 1], tangent[:, 0]], axis=1)
+
+    # Smooth envelope: zero at both endpoints.
+    envelope = np.sin(np.pi * u) ** 2
+    warp = np.zeros(len(ref), dtype=np.float64)
+
+    # 1. Global smooth lateral bias.
+    if random.random() < 0.8:
+        amplitude = random.uniform(-1.0, 1.0)
+        warp += amplitude * envelope
+
+    # 2. Local deformation, tapered at both endpoints.
+    if random.random() < 0.8:
+        center = random.uniform(0.2, 0.8)
+        width = random.uniform(0.08, 0.18)
+        amplitude = random.uniform(-1.2, 1.2)
+
+        bump = np.exp(
+            -0.5 * ((u - center) / width) ** 2
+        )
+        warp += amplitude * bump * envelope
+
+    # 3. Low-frequency lateral drift.
+    if random.random() < 0.5:
+        amplitude = random.uniform(-0.8, 0.8)
+        phase = random.uniform(-np.pi, np.pi)
+
+        wave = np.sin(2.0 * np.pi * u + phase)
+        warp += amplitude * wave * envelope
+
+    # Scale the complete smooth deformation rather than clipping
+    # individual samples, which could introduce sharp transitions.
+    peak = np.max(np.abs(warp))
+    if peak > max_offset_m:
+        warp *= max_offset_m / peak
+
+    warp[0] = 0.0
+    warp[-1] = 0.0
+
+    augmented = ref + warp[:, None] * normal
+
+    # Preserve the ego origin exactly.
+    augmented -= augmented[:1]
+
+    return augmented.astype(np.float32)
+
+
 class BEVDataset(Dataset):
-    def __init__(self, path, split='train', seed=42, val_fraction=0.2,
-                 max_lines=16, line_points=32, ref_points=None, augment=False):
+
+    def __init__(
+        self,
+        path,
+        split="train",
+        seed=42,
+        val_fraction=0.2,
+        max_lines=16,
+        line_points=32,
+        ref_points=None,
+        augment=False,
+        ref_augment=False,
+    ):
         with Path(path).open(encoding='utf-8') as f:
             rows = [json.loads(s) for s in f if s.strip()]
         if not rows:
@@ -41,6 +118,7 @@ class BEVDataset(Dataset):
         self.ref_points = int(ref_points or self.path_points)
         self.max_lines, self.line_points = max_lines, line_points
         self.augment = augment and split == 'train'
+        self.ref_augment = bool(ref_augment and split == 'train')
         indices = list(range(len(rows)))
         random.Random(seed).shuffle(indices)
         nv = max(1, round(len(rows) * val_fraction)) if len(rows) > 1 else 0
@@ -78,9 +156,21 @@ class BEVDataset(Dataset):
             lines[i, :, 9] = float(e.get('line_style') == 'solid')
             lines[i, :, 10] = float(e.get('line_style') == 'dashed')
             valid[i] = True
-        reference = resample(row['reference_line'], self.ref_points, step=self.spacing)
-        # Translate the biased reference's first sample to ego origin; preserve shape/bias elsewhere.
+        reference = resample(
+            row['reference_line'],
+            self.ref_points,
+            step=self.spacing,
+        )
+
         reference = reference - reference[:1]
+
+        # Training-only reference augmentation.
+        if self.ref_augment and random.random() < 0.8:
+            reference = augment_reference_geometry(
+                reference,
+                max_offset_m=1.5,
+            )
+
         gt = np.asarray(row['gt_path'], dtype=np.float32)
         if gt.shape != (self.path_points, 2):
             raise ValueError(f"Inconsistent gt_path shape: {row['id']} {gt.shape}")
