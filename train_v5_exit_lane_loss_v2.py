@@ -305,8 +305,8 @@ def main():
 
     print(
         f"model_type={a.model_type} model_class={model_class} "
-        f"bev_encoder={a.bev_encoder if a.model_type in ("v6B1", "v6B1G") else 'native'} "
-        f"bev_token_mode={a.bev_token_mode if a.model_type in ("v6B1", "v6B1G") else 'native'} "
+        f"bev_encoder={a.bev_encoder if a.model_type in ('v6B1', 'v6B1G') else 'native'} "
+        f"bev_token_mode={a.bev_token_mode if a.model_type in ('v6B1', 'v6B1G') else 'native'} "
         f"lambda_lane={a.lambda_lane} train={len(train_data)} val={len(val_data)} "
         f"eligible_train={train_data.count_eligible} eligible_val={val_data.count_eligible} "
         f"generator_seed={a.generator_seed} device={a.device}",
