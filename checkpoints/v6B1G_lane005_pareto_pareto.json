@@ -1,0 +1,51 @@
+{
+  "objectives": [
+    "val_ade",
+    "exit_lat_scene"
+  ],
+  "reference_exit_nav": {
+    "straight": 0.3842873074570481,
+    "left": 0.2601194762297579,
+    "right": 0.24194172837517477
+  },
+  "exit_constraint_tolerance": 0.0,
+  "best_feasible_ade": null,
+  "frontier": [
+    {
+      "epoch": 19,
+      "ade": 0.5450726983969104,
+      "exit_lat": 0.320252020256359,
+      "path": "checkpoints/v6B1G_lane005_pareto_pareto/epoch_019.pt",
+      "feasible": false,
+      "model_exit_nav": {
+        "straight": 0.4362034688190538,
+        "left": 0.2641442839962405,
+        "right": 0.21099036141778482
+      }
+    },
+    {
+      "epoch": 18,
+      "ade": 0.5470593883373119,
+      "exit_lat": 0.30621331673459845,
+      "path": "checkpoints/v6B1G_lane005_pareto_pareto/epoch_018.pt",
+      "feasible": false,
+      "model_exit_nav": {
+        "straight": 0.40718751598377617,
+        "left": 0.2673606822216833,
+        "right": 0.19984397771909382
+      }
+    },
+    {
+      "epoch": 16,
+      "ade": 0.5562809483406475,
+      "exit_lat": 0.2968480019759731,
+      "path": "checkpoints/v6B1G_lane005_pareto_pareto/epoch_016.pt",
+      "feasible": false,
+      "model_exit_nav": {
+        "straight": 0.4018539118827606,
+        "left": 0.24343059967095787,
+        "right": 0.20082237018328725
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "reference_exit_nav": {
+    "straight": 0.3842873074570481,
+    "left": 0.2601194762297579,
+    "right": 0.24194172837517477
+  },
+  "strict_eligible_scenes_by_nav": {
+    "straight": 49,
+    "left": 37,
+    "right": 33
+  },
+  "generator_seed": 20261021,
+  "visibility_gap": 2.0,
+  "min_visible_points": 5,
+  "constraint_tolerance": 0.0
+}

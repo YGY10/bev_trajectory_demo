@@ -1,0 +1,63 @@
+{
+  "objectives": [
+    "val_ade",
+    "exit_lat_scene"
+  ],
+  "reference_exit_nav": {
+    "straight": 0.3842873074570481,
+    "left": 0.2601194762297579,
+    "right": 0.24194172837517477
+  },
+  "exit_constraint_tolerance": 0.0,
+  "best_feasible_ade": 0.5569462164733635,
+  "frontier": [
+    {
+      "epoch": 18,
+      "ade": 0.5569462164733635,
+      "exit_lat": 0.2920993708011483,
+      "path": "checkpoints/v6B1G_v3_balanced_protect_pareto/epoch_018.pt",
+      "feasible": true,
+      "model_exit_nav": {
+        "straight": 0.3699244501791438,
+        "left": 0.2531489088527254,
+        "right": 0.22021264199054602
+      }
+    },
+    {
+      "epoch": 16,
+      "ade": 0.5571787403247974,
+      "exit_lat": 0.2899887611259933,
+      "path": "checkpoints/v6B1G_v3_balanced_protect_pareto/epoch_016.pt",
+      "feasible": true,
+      "model_exit_nav": {
+        "straight": 0.36820074281066045,
+        "left": 0.24373876182614146,
+        "right": 0.22571187963088354
+      }
+    },
+    {
+      "epoch": 20,
+      "ade": 0.5626812373659739,
+      "exit_lat": 0.28979120109261586,
+      "path": "checkpoints/v6B1G_v3_balanced_protect_pareto/epoch_020.pt",
+      "feasible": true,
+      "model_exit_nav": {
+        "straight": 0.3552791503619175,
+        "left": 0.24911934847163186,
+        "right": 0.23815329079375122
+      }
+    },
+    {
+      "epoch": 11,
+      "ade": 0.6002198885693962,
+      "exit_lat": 0.288368314817673,
+      "path": "checkpoints/v6B1G_v3_balanced_protect_pareto/epoch_011.pt",
+      "feasible": true,
+      "model_exit_nav": {
+        "straight": 0.3681456819176674,
+        "left": 0.24720891283170596,
+        "right": 0.21605943211100317
+      }
+    }
+  ]
+}
